@@ -1,0 +1,82 @@
+@import "./base.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+  --colors-black: #000000;
+  --colors-white: #ffffff;
+
+  --colors-grey-lighter: #fbfbfb;
+  --colors-grey-light: #f0f0f0;
+  --colors-grey: #747474;
+
+  --colors-placeholder: radial-gradient(
+      100% 100% at 0% 50%,
+      #d53a42 19%,
+      rgba(204, 58, 78, 0.75) 39.25%,
+      rgba(194, 57, 86, 0.5) 59.5%,
+      rgba(177, 56, 94, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffb5 0%,
+      #fef372 7.33%,
+      #f6d860 22%,
+      #f3bf59 27.67%,
+      #ed894b 39%,
+      #e47346 45%,
+      #d53a42 57%,
+      #c93a51 63.33%,
+      #b1385e 76%,
+      #97385d 82%,
+      #6a324f 94%
+    );
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+
+  background-color: var(--colors-black);
+
+  color: var(--colors-white);
+  font-family: "Poppins", sans-serif;
+  font-size: calc(16rem / 16);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: calc(6 * 16rem / 16);
+}
+
+h2 {
+  font-size: calc(5 * 16rem / 16);
+  font-weight: 300;
+}
+
+h3 {
+  font-size: calc(4 * 16rem / 16);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: calc(3 * 16rem / 16);
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: calc(2 * 16rem / 16);
+}
+
+h6 {
+  font-size: calc(16rem / 16);
+  font-weight: 700;
+}
+
+a,
+button {
+  cursor: pointer;
+}
